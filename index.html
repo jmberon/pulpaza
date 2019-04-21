@@ -933,10 +933,12 @@
 				<div id="map" class="map-custom"></div>
 				<script>
 					function initMap() {
+						var pulpaza = { lat: 3.3983177, lng: -76.5522196 };
 						var map = new google.maps.Map(document.getElementById('map'), {
-							center: { lat: 3.3983177, lng: -76.5522196 },
+							center: pulpaza,
 							zoom: 17,
 						});
+						var marker = new google.maps.Marker({ position: pulpaza, map: map, label: "Pulpaza" });
 					}
 				</script>
 				<script
